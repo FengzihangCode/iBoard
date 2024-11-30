@@ -12,7 +12,36 @@
 		B2ADD92F2CFAB0370061E1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ADD92E2CFAB0370061E1FD /* Assets.xcassets */; };
 		B2ADD9332CFAB0370061E1FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ADD9322CFAB0370061E1FD /* Preview Assets.xcassets */; };
 		B2ADD93A2CFB3DA90061E1FD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B2ADD9392CFB3DA90061E1FD /* Localizable.xcstrings */; };
+		B2ADD9442CFB506D0061E1FD /* iBoardWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADD9432CFB506D0061E1FD /* iBoardWatchApp.swift */; };
+		B2ADD9462CFB506D0061E1FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADD9452CFB506D0061E1FD /* ContentView.swift */; };
+		B2ADD9482CFB50760061E1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ADD9472CFB50760061E1FD /* Assets.xcassets */; };
+		B2ADD94B2CFB50760061E1FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ADD94A2CFB50760061E1FD /* Preview Assets.xcassets */; };
+		B2ADD94E2CFB50760061E1FD /* iBoardWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B2ADD9412CFB506C0061E1FD /* iBoardWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2ADD94C2CFB50760061E1FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2ADD91F2CFAB0300061E1FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2ADD9402CFB506C0061E1FD;
+			remoteInfo = "iBoardWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2ADD94F2CFB50760061E1FD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B2ADD94E2CFB50760061E1FD /* iBoardWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B2ADD9272CFAB0300061E1FD /* iBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +51,22 @@
 		B2ADD9302CFAB0370061E1FD /* iBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iBoard.entitlements; sourceTree = "<group>"; };
 		B2ADD9322CFAB0370061E1FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2ADD9392CFB3DA90061E1FD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B2ADD9412CFB506C0061E1FD /* iBoardWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBoardWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2ADD9432CFB506D0061E1FD /* iBoardWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBoardWatchApp.swift; sourceTree = "<group>"; };
+		B2ADD9452CFB506D0061E1FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2ADD9472CFB50760061E1FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2ADD94A2CFB50760061E1FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B2ADD9242CFAB0300061E1FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2ADD93E2CFB506C0061E1FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +81,7 @@
 			children = (
 				B2ADD9392CFB3DA90061E1FD /* Localizable.xcstrings */,
 				B2ADD9292CFAB0300061E1FD /* iBoard */,
+				B2ADD9422CFB506D0061E1FD /* iBoardWatch Watch App */,
 				B2ADD9282CFAB0300061E1FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				B2ADD9272CFAB0300061E1FD /* iBoard.app */,
+				B2ADD9412CFB506C0061E1FD /* iBoardWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +115,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B2ADD9422CFB506D0061E1FD /* iBoardWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADD9432CFB506D0061E1FD /* iBoardWatchApp.swift */,
+				B2ADD9452CFB506D0061E1FD /* ContentView.swift */,
+				B2ADD9472CFB50760061E1FD /* Assets.xcassets */,
+				B2ADD9492CFB50760061E1FD /* Preview Content */,
+			);
+			path = "iBoardWatch Watch App";
+			sourceTree = "<group>";
+		};
+		B2ADD9492CFB50760061E1FD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2ADD94A2CFB50760061E1FD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,14 +144,33 @@
 				B2ADD9232CFAB0300061E1FD /* Sources */,
 				B2ADD9242CFAB0300061E1FD /* Frameworks */,
 				B2ADD9252CFAB0300061E1FD /* Resources */,
+				B2ADD94F2CFB50760061E1FD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2ADD94D2CFB50760061E1FD /* PBXTargetDependency */,
+			);
+			name = iBoard;
+			productName = iBoard;
+			productReference = B2ADD9272CFAB0300061E1FD /* iBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2ADD9402CFB506C0061E1FD /* iBoardWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2ADD9522CFB50760061E1FD /* Build configuration list for PBXNativeTarget "iBoardWatch Watch App" */;
+			buildPhases = (
+				B2ADD93D2CFB506C0061E1FD /* Sources */,
+				B2ADD93E2CFB506C0061E1FD /* Frameworks */,
+				B2ADD93F2CFB506C0061E1FD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iBoard;
-			productName = iBoard;
-			productReference = B2ADD9272CFAB0300061E1FD /* iBoard.app */;
+			name = "iBoardWatch Watch App";
+			productName = "iBoardWatch Watch App";
+			productReference = B2ADD9412CFB506C0061E1FD /* iBoardWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,6 +184,9 @@
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					B2ADD9262CFAB0300061E1FD = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					B2ADD9402CFB506C0061E1FD = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
@@ -122,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				B2ADD9262CFAB0300061E1FD /* iBoard */,
+				B2ADD9402CFB506C0061E1FD /* iBoardWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +222,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2ADD93F2CFB506C0061E1FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2ADD94B2CFB50760061E1FD /* Preview Assets.xcassets in Resources */,
+				B2ADD9482CFB50760061E1FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,7 +243,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2ADD93D2CFB506C0061E1FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2ADD9462CFB506D0061E1FD /* ContentView.swift in Sources */,
+				B2ADD9442CFB506D0061E1FD /* iBoardWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2ADD94D2CFB50760061E1FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2ADD9402CFB506C0061E1FD /* iBoardWatch Watch App */;
+			targetProxy = B2ADD94C2CFB50760061E1FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B2ADD9342CFAB0370061E1FD /* Debug */ = {
@@ -269,6 +380,7 @@
 		B2ADD9372CFAB0370061E1FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iBoard/iBoard.entitlements;
@@ -308,6 +420,7 @@
 		B2ADD9382CFAB0370061E1FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iBoard/iBoard.entitlements;
@@ -344,6 +457,67 @@
 			};
 			name = Release;
 		};
+		B2ADD9502CFB50760061E1FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iBoardWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = UGT9K2LTQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iBoardWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = DannyFeng.iBoard;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DannyFeng.iBoard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		B2ADD9512CFB50760061E1FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iBoardWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = UGT9K2LTQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iBoardWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = DannyFeng.iBoard;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DannyFeng.iBoard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -361,6 +535,15 @@
 			buildConfigurations = (
 				B2ADD9372CFAB0370061E1FD /* Debug */,
 				B2ADD9382CFAB0370061E1FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2ADD9522CFB50760061E1FD /* Build configuration list for PBXNativeTarget "iBoardWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2ADD9502CFB50760061E1FD /* Debug */,
+				B2ADD9512CFB50760061E1FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
