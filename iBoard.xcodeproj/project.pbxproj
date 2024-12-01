@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B29BC8CD2CFC59360007629F /* Vela in Frameworks */ = {isa = PBXBuildFile; productRef = B29BC8CC2CFC59360007629F /* Vela */; };
 		B2ADD92B2CFAB0300061E1FD /* iBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADD92A2CFAB0300061E1FD /* iBoardApp.swift */; };
 		B2ADD92D2CFAB0300061E1FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADD92C2CFAB0300061E1FD /* ContentView.swift */; };
 		B2ADD92F2CFAB0370061E1FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ADD92E2CFAB0370061E1FD /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29BC8CD2CFC59360007629F /* Vela in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +171,9 @@
 			dependencies = (
 			);
 			name = "iBoardWatch Watch App";
+			packageProductDependencies = (
+				B29BC8CC2CFC59360007629F /* Vela */,
+			);
 			productName = "iBoardWatch Watch App";
 			productReference = B2ADD9412CFB506C0061E1FD /* iBoardWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +206,9 @@
 				"zh-Hans",
 			);
 			mainGroup = B2ADD91E2CFAB0300061E1FD;
+			packageReferences = (
+				B29BC8CB2CFC59360007629F /* XCRemoteSwiftPackageReference "Vela" */,
+			);
 			productRefGroup = B2ADD9282CFAB0300061E1FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -550,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B29BC8CB2CFC59360007629F /* XCRemoteSwiftPackageReference "Vela" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Serene-Garden/Vela";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B29BC8CC2CFC59360007629F /* Vela */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B29BC8CB2CFC59360007629F /* XCRemoteSwiftPackageReference "Vela" */;
+			productName = Vela;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2ADD91F2CFAB0300061E1FD /* Project object */;
 }

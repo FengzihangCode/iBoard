@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "vela",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Serene-Garden/Vela",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6e350f917b779e7a16fb5240de4b0420e24b5050"
+      }
+    }
+  ],
+  "version" : 2
+}
